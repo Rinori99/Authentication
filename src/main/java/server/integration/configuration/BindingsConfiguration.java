@@ -12,27 +12,27 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class BindingsConfiguration {
 
-    @Value("${binding.user.new.general}")
-    private String newUserGeneralBindingKey;
-
-    @Bean
-    public Binding bindTopicExchangeToNewStudentsQueue(@Qualifier("newStudentsQueue") Queue newStudentsQueue, TopicExchange topicExchange) {
-        return BindingBuilder.bind(newStudentsQueue).to(topicExchange).with(newUserGeneralBindingKey);
-    }
-
-    @Bean
-    public Binding bindTopicExchangeToNewParentsQueue(@Qualifier("newParentsQueue") Queue newParentsQueue, TopicExchange topicExchange) {
-        return BindingBuilder.bind(newParentsQueue).to(topicExchange).with(newUserGeneralBindingKey);
-    }
-
-    @Bean
-    public Binding bindTopicExchangeToNewTeachersQueue(@Qualifier("newTeachersQueue") Queue newTeachersQueue, TopicExchange topicExchange) {
-        return BindingBuilder.bind(newTeachersQueue).to(topicExchange).with(newUserGeneralBindingKey);
-    }
-
-    @Bean
-    public Binding bindTopicExchangeToNewAdminsQueue(@Qualifier("newAdminsQueue") Queue newAdminsQueue, TopicExchange topicExchange) {
-        return BindingBuilder.bind(newAdminsQueue).to(topicExchange).with(newUserGeneralBindingKey);
-    }
+//    @Value("${binding.user.new.general}")
+//    private String newUserGeneralBindingKey;
+//
+//    @Bean
+//    public Binding bindTopicExchangeToNewStudentsQueue(@Qualifier("newStudentsQueue") Queue newStudentsQueue, TopicExchange topicExchange) {
+//        return BindingBuilder.bind(newStudentsQueue).to(topicExchange).with(newUserGeneralBindingKey);
+//    }
+//
+//    @Bean
+//    public Binding bindTopicExchangeToNewParentsQueue(@Qualifier("newParentsQueue") Queue newParentsQueue, TopicExchange topicExchange) {
+//        return BindingBuilder.bind(newParentsQueue).to(topicExchange).with(newUserGeneralBindingKey);
+//    }
+//
+//    @Bean
+//    public Binding bindTopicExchangeToNewTeachersQueue(@Qualifier("newTeachersQueue") Queue newTeachersQueue, TopicExchange topicExchange) {
+//        return BindingBuilder.bind(newTeachersQueue).to(topicExchange).with(newUserGeneralBindingKey);
+//    }
+//
+//    @Bean
+//    public Binding bindTopicExchangeToNewAdminsQueue(@Qualifier("newAdminsQueue") Queue newAdminsQueue, TopicExchange topicExchange) {
+//        return BindingBuilder.bind(newAdminsQueue).to(topicExchange).with(newUserGeneralBindingKey);
+//    }
 
 }

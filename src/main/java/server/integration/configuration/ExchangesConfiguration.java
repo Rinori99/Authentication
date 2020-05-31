@@ -8,12 +8,12 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ExchangesConfiguration {
 
-    @Value("${exchange.topic}")
-    private String topicExchange;
-
-    @Bean
-    public TopicExchange topicExchange() {
-        return new TopicExchange(topicExchange);
-    }
+//    @Value("${exchange.topic}")
+//    private String topicExchange;
+//
+//    @Bean
+//    public TopicExchange topicExchange() {
+//        return new TopicExchange(topicExchange);
+//    }
 
 }
