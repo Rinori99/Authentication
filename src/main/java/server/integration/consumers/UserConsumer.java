@@ -7,7 +7,7 @@ import server.services.AuthUserService;
 
 @Service
 public class UserConsumer {
-
+//
 //    private AuthUserService authUserService;
 //
 //    public UserConsumer(AuthUserService authUserService) {
