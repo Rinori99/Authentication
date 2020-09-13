@@ -8,36 +8,12 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class QueuesConfiguration {
 
-//    @Value("${queue.user.new.student}")
-//    private String newStudentsQueueName;
-//
-//    @Value("${queue.user.new.parent}")
-//    private String newParentsQueueName;
-//
-//    @Value("${queue.user.new.teacher}")
-//    private String newTeachersQueueName;
-//
-//    @Value("${queue.user.new.admin}")
-//    private String newAdminsQueueName;
-//
-//    @Bean(name = "newStudentsQueue")
-//    public Queue newStudentsQueue() {
-//        return new Queue(newStudentsQueueName);
-//    }
-//
-//    @Bean(name = "newParentsQueue")
-//    public Queue newParentsQueue() {
-//        return new Queue(newParentsQueueName);
-//    }
-//
-//    @Bean(name = "newTeachersQueue")
-//    public Queue newTeachersQueue() {
-//        return new Queue(newTeachersQueueName);
-//    }
-//
-//    @Bean(name = "newAdminsQueue")
-//    public Queue newAdminsQueue() {
-//        return new Queue(newAdminsQueueName);
-//    }
+    @Value("${queue.user.new.general}")
+    private String newGeneralUserQueueName;
+
+    @Bean(name = "newGeneralUserQueue")
+    public Queue newGeneralUserQueue() {
+        return new Queue(newGeneralUserQueueName);
+    }
 
 }
